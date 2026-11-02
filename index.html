@@ -4,12 +4,13 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f7f9f7"><meta name="color-scheme" content="light dark">
   <title>UYT_KAZAN_KALENDAR — управление посуточной арендой</title>
+  <script>const t=new URLSearchParams(location.search).get('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;</script>
   <style>
     *{box-sizing:border-box}:root{color-scheme:light dark;--page:#f7f9f7;--card:#fff;--text:#17231c;--muted:#68756d;--line:#e7ece8;--link:#087a43;--hover:#f1f8f3}body{margin:0;padding:8vh 20px;background:var(--page);color:var(--text);font:16px/1.6 system-ui,-apple-system,sans-serif}
     main{max-width:760px;margin:auto;padding:clamp(24px,6vw,56px);background:var(--card);border:1px solid var(--line);border-radius:24px}
     .brand{color:var(--link);font-size:12px;font-weight:800;letter-spacing:.16em}h1{margin:14px 0 8px;font-size:clamp(30px,7vw,46px);line-height:1.1}p{color:var(--muted)}
     nav{display:grid;gap:10px;margin-top:28px}a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:12px;color:var(--link);font-weight:700;text-decoration:none}a:hover{background:var(--hover)}
-    @media(prefers-color-scheme:dark){:root{--page:#111713;--card:#19221c;--text:#edf3ee;--muted:#b3c0b6;--line:#344239;--link:#65d49a;--hover:#24372a}}
+    @media(prefers-color-scheme:dark){:root{--page:#111713;--card:#19221c;--text:#edf3ee;--muted:#b3c0b6;--line:#344239;--link:#65d49a;--hover:#24372a}}:root[data-theme="light"]{color-scheme:light;--page:#f7f9f7;--card:#fff;--text:#17231c;--muted:#68756d;--line:#e7ece8;--link:#087a43;--hover:#f1f8f3}:root[data-theme="dark"]{color-scheme:dark;--page:#111713;--card:#19221c;--text:#edf3ee;--muted:#b3c0b6;--line:#344239;--link:#65d49a;--hover:#24372a}
   </style>
 </head>
 <body><main>
