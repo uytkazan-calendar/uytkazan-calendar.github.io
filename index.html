@@ -5,6 +5,7 @@
   <meta name="theme-color" content="#f7f9f7"><meta name="color-scheme" content="light dark">
   <title>UYT_KAZAN_KALENDAR — управление посуточной арендой</title>
   <script>const t=new URLSearchParams(location.search).get('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;</script>
+  <script>document.addEventListener('DOMContentLoaded',function(){var t=new URLSearchParams(location.search).get('theme');if(!t)return;document.querySelectorAll('a[href]').forEach(function(a){var u=new URL(a.href,location.href);if(u.origin===location.origin&&u.pathname.endsWith('.html')){u.searchParams.set('theme',t);a.href=u.href;}});});</script>
   <style>
     *{box-sizing:border-box}:root{color-scheme:light dark;--page:#f7f9f7;--card:#fff;--text:#17231c;--muted:#68756d;--line:#e7ece8;--link:#087a43;--hover:#f1f8f3}body{margin:0;padding:8vh 20px;background:var(--page);color:var(--text);font:16px/1.6 system-ui,-apple-system,sans-serif}
     main{max-width:760px;margin:auto;padding:clamp(24px,6vw,56px);background:var(--card);border:1px solid var(--line);border-radius:24px}
